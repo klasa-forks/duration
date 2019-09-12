@@ -1,7 +1,7 @@
 {
-  "name": "@klasa/util",
+  "name": "@klasa/duration",
   "version": "0.0.1",
-  "description": "some util thing.",
+  "description": "Parses Duration strings used in klasa.",
   "main": "dist/index.js",
   "scripts": {
     "prepublishOnly": "yarn build",
@@ -30,7 +30,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dirigeants/util"
+    "url": "https://github.com/dirigeants/duration"
   },
   "ava": {
     "compileEnhancements": false,
