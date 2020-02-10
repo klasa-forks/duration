@@ -82,12 +82,6 @@ ava('toNow simple months', (test): void => {
 });
 
 ava('toNow simple year', (test): void => {
-	const duration = new Duration('2 months');
-
-	test.is(Duration.toNow(duration.fromNow), '2 months');
-});
-
-ava('toNow simple year', (test): void => {
 	const duration = new Duration('13 months');
 
 	test.is(Duration.toNow(duration.fromNow), 'a year');
