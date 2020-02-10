@@ -1,10 +1,10 @@
 import ava from 'ava';
 import Duration from '../dist';
 
-//... others
+// ... others
 
 ava('simple', (test): void => {
 	const duration = new Duration('a second');
 
-    test.is(duration.offset, 1000);
+	test.is(duration.offset, 1000);
 });

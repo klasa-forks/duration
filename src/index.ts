@@ -107,7 +107,7 @@ export default class Duration {
 			// a / an = 1
 			.replace(this.aan, '1')
 			// do math
-			.replace(this.regex, (_, i, units) => {
+			.replace(this.regex, (__, i, units) => {
 				units = tokens.get(units) || 0;
 				result += Number(i) * units;
 				return '';
