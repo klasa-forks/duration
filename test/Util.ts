@@ -19,7 +19,7 @@ ava('simple dateFrom duration', (test): void => {
 	const duration = new Duration('a second');
 	const date = new Date();
 
-	test.is(duration.dateFrom(date), new Date(date.getTime() + 1000));
+	test.deepEqual(duration.dateFrom(date), new Date(date.getTime() + 1000));
 });
 
 ava('simple date fromNow duration', (test): void => {
@@ -53,7 +53,7 @@ ava('toNow simple hour', (test): void => {
 	test.is(Duration.toNow(duration.fromNow), 'an hour');
 });
 
-ava('toNow simple hour', (test): void => {
+ava('toNow simple hours', (test): void => {
 	const duration = new Duration('2h');
 
 	test.is(Duration.toNow(duration.fromNow), '2 hours');
