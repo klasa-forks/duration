@@ -1,8 +1,6 @@
 import ava from 'ava';
 import Duration from '../dist';
 
-// ... others
-
 ava('simple duration', (test): void => {
 	const duration = new Duration('a second');
 
@@ -32,7 +30,7 @@ ava('simple date fromNow duration', (test): void => {
 ava('toNow simple seconds', (test): void => {
 	const duration = new Duration('a second');
 
-	test.is(Duration.toNow(duration.fromNow, true), 'in seconds');
+	test.is(Duration.toNow(duration.fromNow.valueOf(), true), 'in seconds');
 });
 
 ava('toNow simple minute', (test): void => {
@@ -57,4 +55,46 @@ ava('toNow simple hours', (test): void => {
 	const duration = new Duration('2h');
 
 	test.is(Duration.toNow(duration.fromNow), '2 hours');
+});
+
+ava('toNow simple day', (test): void => {
+	const duration = new Duration('25hrs');
+
+	test.is(Duration.toNow(duration.fromNow), 'a day');
+});
+
+ava('toNow simple days', (test): void => {
+	const duration = new Duration('2d');
+
+	test.is(Duration.toNow(duration.fromNow), '2 days');
+});
+
+ava('toNow simple month', (test): void => {
+	const duration = new Duration('30days');
+
+	test.is(Duration.toNow(duration.fromNow), 'a month');
+});
+
+ava('toNow simple months', (test): void => {
+	const duration = new Duration('2 months');
+
+	test.is(Duration.toNow(duration.fromNow), '2 months');
+});
+
+ava('toNow simple year', (test): void => {
+	const duration = new Duration('2 months');
+
+	test.is(Duration.toNow(duration.fromNow), '2 months');
+});
+
+ava('toNow simple year', (test): void => {
+	const duration = new Duration('13 months');
+
+	test.is(Duration.toNow(duration.fromNow), 'a year');
+});
+
+ava('toNow simple years', (test): void => {
+	const duration = new Duration('3y');
+
+	test.is(Duration.toNow(duration.fromNow), '3 years');
 });
