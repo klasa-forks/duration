@@ -1,0 +1,528 @@
+{
+	"id": 0,
+	"name": "@klasa/duration",
+	"kind": 0,
+	"flags": {},
+	"originalName": "",
+	"children": [
+		{
+			"id": 1,
+			"name": "\"index\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/runner/work/duration/duration/src/index.ts",
+			"children": [
+				{
+					"id": 2,
+					"name": "Duration",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Converts duration strings into ms and future dates"
+					},
+					"children": [
+						{
+							"id": 7,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Create a new Duration instance"
+							},
+							"signatures": [
+								{
+									"id": 8,
+									"name": "new Duration",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Create a new Duration instance"
+									},
+									"parameters": [
+										{
+											"id": 9,
+											"name": "pattern",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"shortText": "The string to parse\n"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"id": 2,
+										"name": "Duration"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 72,
+									"character": 34
+								}
+							]
+						},
+						{
+							"id": 3,
+							"name": "offset",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "The offset"
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 57,
+									"character": 14
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 6,
+							"name": "aan",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPrivate": true,
+								"isStatic": true,
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "The RegExp used for replacing a/an with 1"
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 72,
+									"character": 19
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "RegExp"
+							},
+							"defaultValue": "/\\ban?\\b/ig"
+						},
+						{
+							"id": 5,
+							"name": "commas",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPrivate": true,
+								"isStatic": true,
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "The RegExp used for removing commas"
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 67,
+									"character": 22
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "RegExp"
+							},
+							"defaultValue": "/,/g"
+						},
+						{
+							"id": 4,
+							"name": "regex",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPrivate": true,
+								"isStatic": true,
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "The RegExp used for the pattern parsing"
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 62,
+									"character": 21
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "RegExp"
+							},
+							"defaultValue": "/(-?\\d*\\.?\\d+(?:e[-+]?\\d+)?)\\s*([a-zμ]*)/ig"
+						},
+						{
+							"id": 10,
+							"name": "fromNow",
+							"kind": 262144,
+							"kindString": "Accessor",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Get the date from now"
+							},
+							"getSignature": [
+								{
+									"id": 11,
+									"name": "__get",
+									"kind": 524288,
+									"kindString": "Get signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Get the date from now"
+									},
+									"type": {
+										"type": "reference",
+										"name": "Date"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 85,
+									"character": 19
+								}
+							]
+						},
+						{
+							"id": 12,
+							"name": "dateFrom",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 13,
+									"name": "dateFrom",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Get the date from"
+									},
+									"parameters": [
+										{
+											"id": 14,
+											"name": "date",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"text": "The Date instance to get the date from\n"
+											},
+											"type": {
+												"type": "reference",
+												"name": "Date"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "Date"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 93,
+									"character": 16
+								}
+							]
+						},
+						{
+							"id": 15,
+							"name": "_parse",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPrivate": true,
+								"isStatic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 16,
+									"name": "_parse",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Parse the pattern"
+									},
+									"parameters": [
+										{
+											"id": 17,
+											"name": "pattern",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"text": "The pattern to parse\n"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 101,
+									"character": 22
+								}
+							]
+						},
+						{
+							"id": 18,
+							"name": "toNow",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isStatic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 19,
+									"name": "toNow",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Shows the user friendly duration of time between a period and now."
+									},
+									"parameters": [
+										{
+											"id": 20,
+											"name": "earlier",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"text": "The time to compare"
+											},
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "reference",
+														"name": "Date"
+													},
+													{
+														"type": "intrinsic",
+														"name": "number"
+													},
+													{
+														"type": "intrinsic",
+														"name": "string"
+													}
+												]
+											}
+										},
+										{
+											"id": 21,
+											"name": "showIn",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"text": "Whether the output should be prefixed\n"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "boolean"
+											},
+											"defaultValue": "false"
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 124,
+									"character": 20
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"kind": 512,
+							"children": [
+								7
+							]
+						},
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								3,
+								6,
+								5,
+								4
+							]
+						},
+						{
+							"title": "Accessors",
+							"kind": 262144,
+							"children": [
+								10
+							]
+						},
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								12,
+								15,
+								18
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 52,
+							"character": 29
+						}
+					]
+				},
+				{
+					"id": 22,
+					"name": "tokens",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 1,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "reference",
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "string"
+							},
+							{
+								"type": "intrinsic",
+								"name": "number"
+							}
+						],
+						"name": "Map"
+					},
+					"defaultValue": "new Map([\n\t['nanosecond', 1 / 1e6],\n\t['nanoseconds', 1 / 1e6],\n\t['ns', 1 / 1e6],\n\n\t['millisecond', 1],\n\t['milliseconds', 1],\n\t['ms', 1],\n\n\t['second', 1000],\n\t['seconds', 1000],\n\t['sec', 1000],\n\t['secs', 1000],\n\t['s', 1000],\n\n\t['minute', 1000 * 60],\n\t['minutes', 1000 * 60],\n\t['min', 1000 * 60],\n\t['mins', 1000 * 60],\n\t['m', 1000 * 60],\n\n\t['hour', 1000 * 60 * 60],\n\t['hours', 1000 * 60 * 60],\n\t['hr', 1000 * 60 * 60],\n\t['hrs', 1000 * 60 * 60],\n\t['h', 1000 * 60 * 60],\n\n\t['day', 1000 * 60 * 60 * 24],\n\t['days', 1000 * 60 * 60 * 24],\n\t['d', 1000 * 60 * 60 * 24],\n\n\t['week', 1000 * 60 * 60 * 24 * 7],\n\t['weeks', 1000 * 60 * 60 * 24 * 7],\n\t['wk', 1000 * 60 * 60 * 24 * 7],\n\t['wks', 1000 * 60 * 60 * 24 * 7],\n\t['w', 1000 * 60 * 60 * 24 * 7],\n\n\t['month', 1000 * 60 * 60 * 24 * (365.25 / 12)],\n\t['months', 1000 * 60 * 60 * 24 * (365.25 / 12)],\n\t['b', 1000 * 60 * 60 * 24 * (365.25 / 12)],\n\n\t['year', 1000 * 60 * 60 * 24 * 365.25],\n\t['years', 1000 * 60 * 60 * 24 * 365.25],\n\t['yr', 1000 * 60 * 60 * 24 * 365.25],\n\t['yrs', 1000 * 60 * 60 * 24 * 365.25],\n\t['y', 1000 * 60 * 60 * 24 * 365.25]\n])"
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						2
+					]
+				},
+				{
+					"title": "Variables",
+					"kind": 32,
+					"children": [
+						22
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Modules",
+			"kind": 1,
+			"children": [
+				1
+			]
+		}
+	]
+}
