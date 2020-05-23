@@ -1,5 +1,5 @@
 import ava from 'ava';
-import Duration from '../dist';
+import Duration from '../src';
 
 ava('simple duration', (test): void => {
 	const duration = new Duration('a second');
