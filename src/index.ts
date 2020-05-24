@@ -49,26 +49,26 @@ const tokens = new Map([
 /**
  * Converts duration strings into ms and future dates
  */
-export default class Duration {
+export class Duration {
 
 	/**
-     * The offset
-     */
+	 * The offset
+	 */
 	public offset: number;
 
 	/**
-     * The RegExp used for the pattern parsing
-     */
+	 * The RegExp used for the pattern parsing
+	 */
 	private static regex = /(-?\d*\.?\d+(?:e[-+]?\d+)?)\s*([a-zμ]*)/ig;
 
 	/**
-     * The RegExp used for removing commas
-     */
+	 * The RegExp used for removing commas
+	 */
 	private static commas = /,/g;
 
 	/**
-     * The RegExp used for replacing a/an with 1
-     */
+	 * The RegExp used for replacing a/an with 1
+	 */
 	private static aan = /\ban?\b/ig;
 
 	/**
