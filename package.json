@@ -1,6 +1,6 @@
 {
   "name": "@klasa/duration",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Parses Duration strings used in klasa.",
   "main": "dist/src/index.js",
   "scripts": {
