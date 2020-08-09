@@ -7,7 +7,7 @@
 	"children": [
 		{
 			"id": 1,
-			"name": "\"src/index\"",
+			"name": "\"index\"",
 			"kind": 1,
 			"kindString": "Module",
 			"flags": {
@@ -78,7 +78,7 @@
 							],
 							"sources": [
 								{
-									"fileName": "src/index.ts",
+									"fileName": "index.ts",
 									"line": 72,
 									"character": 34
 								}
@@ -98,7 +98,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/index.ts",
+									"fileName": "index.ts",
 									"line": 57,
 									"character": 14
 								}
@@ -123,7 +123,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/index.ts",
+									"fileName": "index.ts",
 									"line": 72,
 									"character": 19
 								}
@@ -149,7 +149,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/index.ts",
+									"fileName": "index.ts",
 									"line": 67,
 									"character": 22
 								}
@@ -175,7 +175,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "src/index.ts",
+									"fileName": "index.ts",
 									"line": 62,
 									"character": 21
 								}
@@ -218,7 +218,7 @@
 							],
 							"sources": [
 								{
-									"fileName": "src/index.ts",
+									"fileName": "index.ts",
 									"line": 85,
 									"character": 19
 								}
@@ -271,7 +271,7 @@
 							],
 							"sources": [
 								{
-									"fileName": "src/index.ts",
+									"fileName": "index.ts",
 									"line": 93,
 									"character": 16
 								}
@@ -325,7 +325,7 @@
 							],
 							"sources": [
 								{
-									"fileName": "src/index.ts",
+									"fileName": "index.ts",
 									"line": 101,
 									"character": 22
 								}
@@ -409,7 +409,7 @@
 							],
 							"sources": [
 								{
-									"fileName": "src/index.ts",
+									"fileName": "index.ts",
 									"line": 124,
 									"character": 20
 								}
@@ -453,7 +453,7 @@
 					],
 					"sources": [
 						{
-							"fileName": "src/index.ts",
+							"fileName": "index.ts",
 							"line": 52,
 							"character": 21
 						}
@@ -469,7 +469,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/index.ts",
+							"fileName": "index.ts",
 							"line": 1,
 							"character": 12
 						}
@@ -509,24 +509,7 @@
 			],
 			"sources": [
 				{
-					"fileName": "src/index.ts",
-					"line": 1,
-					"character": 0
-				}
-			]
-		},
-		{
-			"id": 23,
-			"name": "\"test/Util\"",
-			"kind": 1,
-			"kindString": "Module",
-			"flags": {
-				"isExported": true
-			},
-			"originalName": "/home/runner/work/duration/duration/test/Util.ts",
-			"sources": [
-				{
-					"fileName": "test/Util.ts",
+					"fileName": "index.ts",
 					"line": 1,
 					"character": 0
 				}
@@ -538,8 +521,7 @@
 			"title": "Modules",
 			"kind": 1,
 			"children": [
-				1,
-				23
+				1
 			]
 		}
 	]
